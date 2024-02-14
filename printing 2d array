@@ -1,0 +1,29 @@
+//input and print 2d array 
+#include<stdio.h>
+int main()
+{
+    int n,m,l,i,j;
+    printf("enter the size of array :");
+    scanf("%d%d",&m,&n);
+    int arr[m][n];
+    printf("enter array :");
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            printf("\nelement :");
+            scanf("%d",&arr[i][j]); //scanning elements
+        }
+    }
+    
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            printf("%d\t",arr[i][j]); //printing elements 
+        }
+        printf("\n");
+    }
+    return 0;
+    
+}
