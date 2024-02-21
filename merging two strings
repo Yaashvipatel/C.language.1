@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char str1[] = "Hello";
+    char str2[] = "world";
+    char merged[20]; 
+    int len1 = strlen(str1);
+    int len2 = strlen(str2);
+    int i, j;
+
+    for (i = 0; i < len1; i++) 
+    {
+        merged[i] = str1[i];
+    }
+
+    
+    for (j = 0; j < len2; j++) 
+    {
+        merged[i + j] = str2[j];
+    }
+
+    merged[i + j] = '\0';
+    printf("Merged string: \n");
+    puts(merged);
+    return 0;
+}
