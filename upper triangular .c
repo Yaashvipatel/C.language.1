@@ -28,6 +28,6 @@ int main()
     if(f==1)
     {printf("upper");}
     else
-    {printf("glt hai:");}
+    {printf("not upper triangular");}
     return 0;
 }
