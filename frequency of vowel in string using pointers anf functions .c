@@ -1,4 +1,4 @@
-//frequency of vowel in string using pointers anf functions 
+//frequency of vowel in string using pointers and functions 
 
 #include<stdio.h>
 #include<string.h>
