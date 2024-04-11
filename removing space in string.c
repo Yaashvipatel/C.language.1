@@ -3,21 +3,20 @@
 #include<string.h>
 int main()
 {
-    char str[100];
-    int i,j,temp,n;
+    char str[100],mtr[100],ltr[100];
+    int i,j,c,temp,n,p,m;
     printf("enter string : ");
     fgets(str,100,stdin);
     n=strlen(str);
-    for(i=0;i<n-1;i++)
+    j=0;
+    for(i=0;str[i]!='\0';i++)
     {
-        if(str[i]==' '&&str[i+1]!=' ')
+        if(str[i]!=' ')
         {
-            for(j=i;j<n-1;j++)
-            {
-                str[j]=str[j+1];
-            }
+            str[j++]=str[i];
         }
     }
+    str[j]='\0';
     puts(str);
-    
+    return 0;
 }
