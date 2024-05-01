@@ -1,0 +1,30 @@
+//calc the sum of marks of each student by passing struct variable to function ;
+#include<stdio.h>
+struct stu{
+    int roll;
+    int marks;
+};
+void sum(struct stu s[], int n)
+{
+    int i,sum=0;
+    for(i=0;i<n;i++)
+    {
+      sum=sum+s[i].marks;  
+    }
+    printf("sum of marks is : %d",sum);
+}
+int main ()
+{
+    int i,n;
+    struct stu s[100];
+    printf("enter n :");
+    scanf("%d",&n);
+    printf("enter details : \n");
+    for(i=0;i<n;i++)
+    {
+        printf("roll no anf marks of student %d : ",i+1 );
+        scanf("%d%d",&s[i].roll,&s[i].marks);
+    }
+    sum(s,n);
+    
+}
